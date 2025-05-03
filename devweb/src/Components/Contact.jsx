@@ -31,7 +31,7 @@ const Contact = () => {
     setSubmitMessage('');
 
     try {
-      const response = await fetch(import.meta.env.VITE_BACKENDURL, {
+      const response = await fetch(import.meta.env.VITE_BACKENDURL || 'https://myportfolio-yxbj.onrender.com/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
