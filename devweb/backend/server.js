@@ -14,7 +14,6 @@ mongoose.connect("mongodb+srv://vidtubeuser:vidtubeuser12@cluster0.gsfsr.mongodb
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.error(err));
 
-// Define the schema and model
 const contactSchema = new mongoose.Schema({
     name: String,
     email: String,
@@ -23,10 +22,10 @@ const contactSchema = new mongoose.Schema({
 const Contact = mongoose.model('Contact', contactSchema);
 
 app.post('/', async (req, res) => {
+    res.send("API Working...!")
     try {
         const { name, message, email } = req.body;
         
-        // Create a new document using the model
         const contact = new Contact({ name, email, message });
         await contact.save();
         
