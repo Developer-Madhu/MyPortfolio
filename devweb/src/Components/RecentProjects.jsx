@@ -1,6 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import ecommerce from '../assets/Ecommerce.png'
+import mockmate from '../assets/mockmate.png'
+import mock from '../assets/mock.png'
+import health from '../assets/health.png'
+import net from '../assets/net.png'
 
 // Project data with image paths
 const projects = [
@@ -8,35 +13,35 @@ const projects = [
     id: 1,
     title: "HealthSync Virtual AI Assistant",
     description: "Developed a visually appealing and highly functional interface backed by Google Gemini AI model for user interactions with responses.",
-    image: "https://img.freepik.com/free-vector/hand-drawn-ai-healthcare-illustration_52683-156475.jpg",
+    image: health,
     link: "https://github.com/Developer-Madhu/HealthSync-VirtualAI"
   },
   {
     id: 2,
     title: "MockMate AI Interview System",
     description: "An AI powered interview system in which user can prepare for their interview, attempt mocks and get personalized feedback",
-    image: "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-c9dc-622f-812f-33dcb0eca7e6/raw?se=2025-05-02T10%3A47%3A18Z&sp=r&sv=2024-08-04&sr=b&scid=74a0151e-703b-5ce9-996d-96a19a17182a&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-02T02%3A46%3A54Z&ske=2025-05-03T02%3A46%3A54Z&sks=b&skv=2024-08-04&sig=8vIZnm/94EXDbr/ks662Vic%2BA1cJeM3dRmB1L%2BXhDR4%3D",
+    image: mock,
     link: "#"
   },
   {
     id: 3,
     title: "Socio Ecommerce",
     description: "Created a web app with social media interface increasing 95% user satisfaction with the scrolling algorithm and interactive elements for the customer & sellers",
-    image: "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-f500-622f-9485-e7128bd08881/raw?se=2025-05-02T10%3A58%3A59Z&sp=r&sv=2024-08-04&sr=b&scid=95b52d8e-d00a-55f9-b514-8dd3010ecc63&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-02T02%3A48%3A08Z&ske=2025-05-03T02%3A48%3A08Z&sks=b&skv=2024-08-04&sig=TAta3WOL3qlN6N%2BCOuz3GM3KXIXIHGbRF2gEjgN3D%2Bs%3D",
+    image: ecommerce,
     link: "https://github.com/Developer-Madhu/Socio-Ecommerce"
   },
   {
     id: 4,
     title: "Postly AI Media",
     description: "A Web Application with integrated AI Agents which can post content on multiple social media handles at single click!",
-    image: "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-3bdc-622f-a5b5-6381197a1649/raw?se=2025-05-02T10%3A50%3A50Z&sp=r&sv=2024-08-04&sr=b&scid=c069dd89-7f1e-5df8-b7c5-887eb0416edc&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-02T02%3A46%3A42Z&ske=2025-05-03T02%3A46%3A42Z&sks=b&skv=2024-08-04&sig=hGKwwR0nXM81eHeJxHkyOEnhIsEa0meQD/6A1tCXOmw%3D",
+    image: mockmate,
     link: "https://github.com/Developer-Madhu/Postly-Ai"
   },
   {
     id: 5,
     title: "NetWorthy",
     description: "A Web Application with integrated AI Agents which can post content on multiple social media handles at single click!",
-    image: "https://sdmntprnorthcentralus.oaiusercontent.com/files/00000000-3bdc-622f-a5b5-6381197a1649/raw?se=2025-05-02T10%3A50%3A50Z&sp=r&sv=2024-08-04&sr=b&scid=c069dd89-7f1e-5df8-b7c5-887eb0416edc&skoid=de76bc29-7017-43d4-8d90-7a49512bae0f&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-05-02T02%3A46%3A42Z&ske=2025-05-03T02%3A46%3A42Z&sks=b&skv=2024-08-04&sig=hGKwwR0nXM81eHeJxHkyOEnhIsEa0meQD/6A1tCXOmw%3D",
+    image: net,
     link: "https://github.com/Developer-Madhu/NetWorthy"
   }
 ];

@@ -91,30 +91,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Utility Pages Section */}
-          <div className="flex flex-col items-center sm:items-center sm:text-center">
-            <h3 className="text-lg font-semibold mb-4">Utility Pages</h3>
-            <ul className="space-y-2 text-center">
-              <motion.li variants={linkVariants} whileHover="hover">
-                <a href="#style-guide" className="hover:text-gray-300 transition-colors">Style Guide</a>
-              </motion.li>
-              <motion.li variants={linkVariants} whileHover="hover">
-                <a href="#licenses" className="hover:text-gray-300 transition-colors">Licenses</a>
-              </motion.li>
-              <motion.li variants={linkVariants} whileHover="hover">
-                <a href="#changelog" className="hover:text-gray-300 transition-colors">Changelog</a>
-              </motion.li>
-              <motion.li variants={linkVariants} whileHover="hover">
-                <a href="#password-protected" className="hover:text-gray-300 transition-colors">Password Protected</a>
-              </motion.li>
-              <motion.li variants={linkVariants} whileHover="hover">
-                <a href="#404" className="hover:text-gray-300 transition-colors">404 Page</a>
-              </motion.li>
-            </ul>
-          </div>
-
           {/* Follow Me Section */}
-          <div className="flex flex-col items-center md:items-center    ">
+          <div className="flex flex-col justify-center items-center md:items-center    ">
             <h3 className="text-lg font-semibold mb-4">Follow me</h3>
             <ul className="space-y-2 text-center flex flex-row gap-4 sm:justify-center">
               {socialIcons.map((item) => {
